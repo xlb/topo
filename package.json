@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "d3": "^5.14.2",
+    "dagre-d3": "^0.6.4",
+    "jsplumb": "^2.12.8",
+    "vue": "^2.6.10",
+    "vuedraggable": "^2.23.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -29,7 +33,13 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "indent": [
+        2,
+        4
+      ],
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
