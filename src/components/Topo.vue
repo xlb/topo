@@ -49,6 +49,7 @@ export default {
 
     data() {
         return {
+            
             timer:null,
             sortFuntion:1,//0 g3,1自定义
             root : {
@@ -63,118 +64,8 @@ export default {
                         id: '2',
                         name: '苹果vc',
                         type: 'fruit'
-                    },
-                    {
-                        id: '3',
-                        name: '深圳fasd',
-                        type: 'address'
-                    },
-                    {
-                        id: '4',
-                        name: '香蕉222',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '5',
-                        name: '上海xx',
-                        type: 'address'
-                    },
-                    {
-                        id: '6',
-                        name: '111红茶',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '7',
-                        name: '北京xx',
-                        type: 'address'
-                    },
-                    {
-                        id: '8',
-                        name: 'c果',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '9',
-                        name: '22深圳',
-                        type: 'address'
-                    },
-                    {
-                        id: '10',
-                        name: '11香蕉',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '11',
-                        name: '上t',
-                        type: 'address'
-                    },
-                    {
-                        id: '12',
-                        name: '红222茶',
-                        type: 'fruit'
                     }
-                    ,
-                    {
-                        id: '13',
-                        name: '北京2xx',
-                        type: 'address'
-                    },
-                    {
-                        id: '14',
-                        name: '11苹果',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '15',
-                        name: '深圳bb',
-                        type: 'address'
-                    },
-                    {
-                        id: '16',
-                        name: 'dd香蕉',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '17',
-                        name: '上dd海',
-                        type: 'address'
-                    },
-                    {
-                        id: '18',
-                        name: '红aa茶',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '19',
-                        name: '北京xx',
-                        type: 'address'
-                    },
-                    {
-                        id: '20',
-                        name: '苹s果',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '21',
-                        name: '深f圳',
-                        type: 'address'
-                    },
-                    {
-                        id: '22',
-                        name: '香s蕉',
-                        type: 'fruit'
-                    },
-                    {
-                        id: '23',
-                        name: '上海sd',
-                        type: 'address'
-                    },
-                    {
-                        id: '24',
-                        name: '红茶df',
-                        type: 'fruit'
-                    }
+                   
                 ],
                 edges: [
                     {
@@ -190,126 +81,7 @@ export default {
                         labelInfo: {
                             payload: "回头"
                         }
-                    },
-
-                    {
-                        source: '2',
-                        target: '3',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '2',
-                        target: '4',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '4',
-                        target: '5',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '5',
-                        target: '4',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '5',
-                        target: '6',
-                        labelInfo: {
-                            payload: 1024
-                        }
                     }
-                    ,{
-                        source: '6',
-                        target: '7',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    }
-                    ,{
-                        source: '7',
-                        target: '8',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '8',
-                        target: '9',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },        {
-                        source: '9',
-                        target: '10',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    }
-                    ,{
-                        source: '10',
-                        target: '11',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '11',
-                        target: '12',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '12',
-                        target: '13',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    }
-                    ,{
-                        source: '13',
-                        target: '14',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '14',
-                        target: '15',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    },
-                    {
-                        source: '15',
-                        target: '16',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    }
-                    ,{
-                        source: '16',
-                        target: '17',
-                        labelInfo: {
-                            payload: 1024
-                        }},
-                    {
-                        source: '17',
-                        target: '1',
-                        labelInfo: {
-                            payload: 1024
-                        }
-                    }
-        
 
                 ]
             },
@@ -320,6 +92,7 @@ export default {
                 Container: "relation-box",
                 // 连线的样式 StateMachine、Flowchart
                 Connector: ["Bezier", { curviness: 100 }],
+                maxConnections: -1,
                 // 鼠标不能拖动删除线
                 ConnectionsDetachable: false,
                 // 删除线的时候节点不删除
@@ -345,7 +118,7 @@ export default {
                 isSource: true,
                 isTarget: true,
                 // 动态锚点、提供了4个方向 Continuous、AutoDefault
-                anchor: "AutoDefault"
+                anchor: "Continuous"
             },
 
 
